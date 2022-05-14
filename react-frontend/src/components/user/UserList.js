@@ -1,5 +1,4 @@
 import UserObj from './UserObj';
-
 function UserList(props)
 {
   return (

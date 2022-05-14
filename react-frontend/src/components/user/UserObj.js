@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function UserObj(props)
 {
     return (
@@ -16,7 +18,15 @@ function UserObj(props)
             </div>
             <div>Interest: {props.interest}</div>
           </div>
-          <div class="space-y-2">{props.bio}</div>
+          <div class="space-y-5">{props.bio}</div>
+          <div>
+            <Link
+              to="/needhelp"
+              className="py-2 px-4 bg-blue-500 rounded-full text-1xl hover:bg-green-300 transition duration-300 ease-in-out items-center"
+            >
+              Hire!
+            </Link>
+          </div>
         </div>
     );
 }

@@ -3,33 +3,33 @@ import UserList from '../components/user/UserList';
 const DUMMY_DATA = [
   {
     id: 'p1',
-    name: 'Yoshikage Kira',
+    name: 'Emma Emma',
     backgroud_image: 'https://i.imgur.com/OvwRnz4.png',
-    profile_image:'https://i.kym-cdn.com/entries/icons/original/000/029/929/Kira_decides_to_tail_Shigechi.png',
-    bio:"insert bio here",
-    email: 'killerqueen@csu.fullerton.edu',
-    interest: 'Walks, Living a quiet life, Holding Hands'
+    profile_image:'https://static.wixstatic.com/media/b0f5f0_899895dc14e644ae8d72b1a4c9bc3fe8~mv2.jpg/v1/fill/w_680,h_704,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Dog%2520pic%252010_edited.jpg',
+    bio:"I am proud to be your dog sitter!",
+    email: 'fakeemail@doggy.com',
+    interest: 'Walks, Early Raiser, Outdoors'
+  },
+  {
+    id: 'p2',
+    name: 'Jake Jake',
+    backgroud_image: 'https://i.imgur.com/OvwRnz4.png',
+    profile_image:'https://bulletproofdogtraining.com/wp-content/uploads/2020/02/mike.jpg',
+    bio:"I work well with misbehaving dogs!",
+    email: 'anotherfakeemail@doggy.com',
+    interest: 'Walks, Dog Tricks , Helping abused dogs'
   },
 ];
-
 
 function Profile()
 {
   return (
     <section>
-      <UserList users={DUMMY_DATA} />
+      <UserList users={DUMMY_DATA}>
+      </UserList>
+
     </section>
   );
 }
-/*My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh,
-where all the villas are, and I am not married. I work as an employee for the Kame Yu department
-stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink.
-I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a
-glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually
-have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress
-in the morning. I was told there were no issues at my last check-up. I'm trying to explain that
-I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any
-enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal
-with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't
-lose to anyone.*/
+
 export default Profile;

@@ -8,7 +8,7 @@ const Navbar = ({ toggle }) => {
       role="navigation"
     >
       <Link to="/" className="pl-8">
-        Titan Talks
+        Dog Walker
       </Link>
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
@@ -31,19 +31,19 @@ const Navbar = ({ toggle }) => {
           Home
         </Link>
         <Link className="p-4" to="/profile">
-          Profile
+          Connect
         </Link>
         <Link className="p-4" to="/about">
           About
-        </Link>
-        <Link className="p-4" to="/faq">
-          FAQ
         </Link>
         <Link className="p-4" to="/signup">
           Sign Up
         </Link>
         <Link className="p-4" to="/signin">
           Sign In
+        </Link>
+        <Link className="p-4" to="/userprofile">
+          My Profile
         </Link>
       </div>
     </nav>

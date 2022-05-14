@@ -4,11 +4,13 @@ import "./App.css";
 import Dropdown from "./components/Dropdown";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import FAQ from "./pages/FAQ";
+// import FAQ from "./pages/FAQ";
 import Home from "./pages/index";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import UserProfile from "./pages/userprofile";
+import NeedHelp from "./pages/needhelp";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +38,11 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/faq" element={<FAQ />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/userprofile" element={<UserProfile />} />
+        <Route path="/needhelp" element={<NeedHelp />} />
       </Routes>
 
       <Footer />
