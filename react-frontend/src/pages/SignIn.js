@@ -1,14 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const { register, handleSubmit } = useForm();
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center">
+    <div className="font-mono min-h-screen bg-gray-50 flex flex-col justify-center">
       <div className="max-w-md w-full mx-auto">
-        <div className="text-center font-medium text-xl"> something</div>
+        <div className="text-center font-medium text-xl"> Hello</div>
         <div className="text-3xl font-bold text-gray-900 mt-2 text-center">
-          some text
+          Welcome Back!
         </div>
       </div>
       <div className="max-w-md w-full mx-auto mt-4 bg-white p-8 border border-gray-300">
@@ -44,16 +45,15 @@ const SignIn = () => {
               </label>
             </div>
             <div>
-              <a href="" className="font-medium text-sm text-blue-500"></a>
+              <a href="./signup" className="font-medium text-sm text-blue-500">Don't have an account?</a>
             </div>
           </div>
           <div>
-            <button className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md text-white text-sm">
-              Submit
-            </button>
+            <a href="./choose" className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md text-white text-sm">Submit</a>
           </div>
         </form>
       </div>
+
     </div>
   );
 };

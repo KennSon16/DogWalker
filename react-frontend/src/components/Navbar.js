@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageDogo from "../images/dogo.png";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -7,9 +8,10 @@ const Navbar = ({ toggle }) => {
       className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono"
       role="navigation"
     >
-      <Link to="/" className="pl-8">
+      <Link to="/" className="pl-4">
         Dog Walker
       </Link>
+      <img src={ImageDogo} alt="" className="object-scale-down h-12 w-12  rounded-lg" />
       <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -11,6 +11,8 @@ import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import UserProfile from "./pages/userprofile";
 import NeedHelp from "./pages/needhelp";
+import Choose from "./pages/choose";
+import GiveHelp from "./pages/givehelp";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,6 +45,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/userprofile" element={<UserProfile />} />
         <Route path="/needhelp" element={<NeedHelp />} />
+        <Route path="/givehelp" element={<GiveHelp />} />
+        <Route path="/choose" element={<Choose />} />
       </Routes>
 
       <Footer />

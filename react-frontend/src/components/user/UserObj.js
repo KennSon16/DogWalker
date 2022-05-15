@@ -18,11 +18,11 @@ function UserObj(props)
             </div>
             <div>Interest: {props.interest}</div>
           </div>
-          <div class="space-y-5">{props.bio}</div>
-          <div>
+          <div class="space-y-5">Bio: {props.bio}</div>
+          <div className="p-4" >
             <Link
               to="/needhelp"
-              className="py-2 px-4 bg-blue-500 rounded-full text-1xl hover:bg-green-300 transition duration-300 ease-in-out items-center"
+              className="py-2 px-4 bg-blue-500 rounded-full text-2xl hover:bg-green-300 transition duration-300 ease-in-out items-center"
             >
               Hire!
             </Link>
